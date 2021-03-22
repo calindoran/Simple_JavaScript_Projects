@@ -1,0 +1,55 @@
+#To install babel for ES6 to ES5 conversion, in terminal write:
+
+npm install babel-cli -D
+npm install babel-preset-env -D
+
+'The -D flag instructs npm to add each package to a property called devDependencies in package.json.
+Once the project’s dependencies are listed in devDependencies, other developers can run your project 
+without installing each package separately. Instead, they can simply run npm install — it instructs 
+npm to look inside package.json and download all of the packages listed in devDependencies.'
+
+#To install dependencies:
+
+npm install
+
+'You can specify the initial JavaScript version inside of a file named .babelrc. 
+In your root directory, you can run touch .babelrc to create this file.'
+
+'When you run Babel, it looks in .babelrc to determine the version of the initial JavaScript file. 
+In this case, ["env"] instructs Babel to transpile any code from versions ES6 and later.'
+
+#Last step to transpile code to ES5.
+
+'In the "scripts" object above, we add a property called "build". 
+The property’s value, "babel src -d lib", is a command line method that transpiles ES6+ code to ES5.'
+
+#Add
+ "build": "babel src -d lib" 
+ to "scripts": {} 
+ in package.json
+
+
+This will transpile code to the 'lib' directory.
+Now we use command: 'npm run build'
+
+####QUICK TIPS!####
+For future reference, here is a list of the steps needed to set up a project for transpilation:
+
+1. Initialize your project using npm init and create a directory called src
+
+2. Install babel dependencies by running
+
+npm install babel-cli -D
+npm install babel-preset-env -D
+
+3. Create a .babelrc file inside your project and add the following code inside it:
+
+{
+  "presets": ["env"]
+}
+
+4. Add the following script to your scripts object in package.json:
+
+"build": "babel src -d lib"
+
+5. Run npm run build whenever you want to transpile your code from your src to lib directories.
