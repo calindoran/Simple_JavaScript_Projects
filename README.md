@@ -1,7 +1,7 @@
 # Some Simple JS Projects
-- Personal repo to store and log my current work with JS. Inc. two source folders, one containing ES6 src, and lib containing ES5 using the JavaScript transcompiler Babel.
+- My repo to log and store my current work with JS. This includes two source folders, one containing ES6 called __src__, and the other called __lib__ containing ES5 generated using the JavaScript transcompiler Babel.
 
-- Directory src/work includes interview prep questions.
+- Directory __src/work__ includes interview prep questions in ES6.
  
 
 ## Running the webapp
