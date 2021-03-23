@@ -1,8 +1,8 @@
-# javascript_projects
+# javascript_projects #
  A repo to store and log my current work with JS.
 
 
-# QUICK TIPS! #
+## QUICK TIPS! ##
 For future reference, here is a list of the steps needed to set up the project for transpilation:
 
 1. Initialize your project using npm init and create a directory called src
