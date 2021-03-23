@@ -1,4 +1,4 @@
-# javascript_projects #
+# Some Simple JS Projects #
  A repo to store and log my current work with JS.
 
 
