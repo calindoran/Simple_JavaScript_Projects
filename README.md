@@ -1,11 +1,15 @@
-# Some Simple JS Projects #
- · Personal repo to store and log my current work with JS. Inc. two source folders, one containing ES6 src, and lib containing ES5 using the JavaScript transcompiler Babel.
+# Some Simple JS Projects
+- Personal repo to store and log my current work with JS. Inc. two source folders, one containing ES6 src, and lib containing ES5 using the JavaScript transcompiler Babel.
 
- · Directory src/work includes interview prep questions.
+- Directory src/work includes interview prep questions.
+ 
+
+## Running the webapp
+>If you would like to see how compatable our ES6 to Babel's ES5 is, you can simple run the index.html file with an extension like Live Server for VS Code.
 
 
-## QUICK TIPS! ##
-For future reference, here is a list of the steps needed to set up the project for transpilation:
+## QUICK TIPS!
+>For future reference, here is a list of the steps needed to set up the project for transpilation:
 
 1. Initialize your project using npm init and create a directory called src
 
