@@ -3,6 +3,7 @@
  * The order of values in the returned array should be consistent with the order in which values first
  * appeared in the input array.
  */
+
 const removeDuplicates = (input) => {
   return input.filter((item, index) => input.indexOf(item) === index);
 };
