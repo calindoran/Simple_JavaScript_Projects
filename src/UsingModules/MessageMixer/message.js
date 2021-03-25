@@ -9,7 +9,7 @@ import {
   encode,
   palindrome,
   pigLatin,
-} from "./messageMixer";
+} from "./messageMixer.js";
 
 function displayMessage() {
   console.log(countCharacter("What is the color of the sky?", "t"));

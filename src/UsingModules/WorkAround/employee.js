@@ -23,7 +23,7 @@ let payGrades = {
   },
 };
 
-export const getCadre = () => {
+function getCadre() {
   if (
     Employee.salary >= payGrades.entryLevel.minSalary &&
     Employee.salary <= payGrades.entryLevel.maxSalary
@@ -35,21 +35,21 @@ export const getCadre = () => {
   ) {
     return "midLevel";
   } else return "seniorLevel";
-};
+}
 
-export const calculateTax = () => {
+function calculateTax() {
   return payGrades[getCadre()].taxMultiplier * Employee.salary;
-};
+}
 
-export const getBenefits = () => {
+function getBenefits() {
   return payGrades[getCadre()].benefits.join(", ");
-};
+}
 
-export const calculateBonus = () => {
+function calculateBonus() {
   return 0.02 * Employee.salary;
-};
+}
 
-export const reimbursementEligibility = () => {
+function reimbursementEligibility() {
   let reimbursementCosts = {
     health: 5000,
     housing: 8000,
@@ -62,6 +62,13 @@ export const reimbursementEligibility = () => {
     totalBenefitsValue += reimbursementCosts[employeeBenefits[i]];
   }
   return totalBenefitsValue;
-};
+}
 
-export default Employee;
+export {
+  Employee,
+  getCadre,
+  calculateTax,
+  getBenefits,
+  calculateBonus,
+  reimbursementEligibility,
+};
