@@ -23,7 +23,7 @@ let payGrades = {
   },
 };
 
-const getCadre = () => {
+export const getCadre = () => {
   if (
     Employee.salary >= payGrades.entryLevel.minSalary &&
     Employee.salary <= payGrades.entryLevel.maxSalary
@@ -37,19 +37,19 @@ const getCadre = () => {
   } else return "seniorLevel";
 };
 
-const calculateTax = () => {
+export const calculateTax = () => {
   return payGrades[getCadre()].taxMultiplier * Employee.salary;
 };
 
-const getBenefits = () => {
+export const getBenefits = () => {
   return payGrades[getCadre()].benefits.join(", ");
 };
 
-const calculateBonus = () => {
+export const calculateBonus = () => {
   return 0.02 * Employee.salary;
 };
 
-const reimbursementEligibility = () => {
+export const reimbursementEligibility = () => {
   let reimbursementCosts = {
     health: 5000,
     housing: 8000,
@@ -64,11 +64,4 @@ const reimbursementEligibility = () => {
   return totalBenefitsValue;
 };
 
-export {
-  Employee,
-  getCadre as cadre,
-  calculateTax as tax,
-  getBenefits as benefits,
-  calculateBonus as bonus,
-  reimbursementEligibility as reimbursement,
-};
+export default Employee;
