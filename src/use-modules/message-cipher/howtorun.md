@@ -31,3 +31,21 @@ Enter the message you would like to encrypt...
 Here is your encrypted message:
 > olleh dlrow
 ```
+
+For example, try running this command in the terminal:
+
+```
+node message-mixer.js caesar 4
+```
+
+And then, when prompted, type the following message:
+
+```
+> cnawp fkx!
+```
+
+Should return:
+
+```
+> great job!
+```
