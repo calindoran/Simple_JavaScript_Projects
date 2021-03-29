@@ -1,11 +1,17 @@
 // Import the encryptors functions here.
 
+// 3.
+// const {caesarCipher, symbolCipher, reverseCipher} = require('./encryptors.js');
+import { caesarCipher, symbolCipher, reverseCipher } from "./encryptors.js";
+
 const encodeMessage = (str) => {
   // Use the encryptor functions here.
+  return reverseCipher(symbolCipher(caesarCipher(str, 4)));
 };
 
 const decodeMessage = (str) => {
   // Use the encryptor functions here.
+  return caesarCipher(symbolCipher(reverseCipher(str)), -4);
 };
 
 // User input / output.

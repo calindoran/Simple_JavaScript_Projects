@@ -1,6 +1,5 @@
 // Declare and export the functions here.
 // Encryption Functions
-/////////////////////////////////////////////
 
 const caesarCipher = (str, amount = 0) => {
   if (amount < 0) {
@@ -61,8 +60,11 @@ const reverseCipher = (sentence) => {
   return words.join(" ");
 };
 
-module.exports = {
-  caesarCipher,
-  symbolCipher,
-  reverseCipher,
-};
+// 2.
+// module.exports = {
+//   caesarCipher,
+//   symbolCipher,
+//   reverseCipher,
+// };
+
+export { caesarCipher, symbolCipher, reverseCipher };

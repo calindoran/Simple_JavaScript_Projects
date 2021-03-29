@@ -1,12 +1,13 @@
 // Import the functions from encryptors.js here.
-let encryptors = {};
 
-encryptors = require("./encryptors.js");
+// 1.
+// let encryptors = {};
+// encryptors = require("./encryptors.js");
+// const { caesarCipher, symbolCipher, reverseCipher } = encryptors;
 
-const { caesarCipher, symbolCipher, reverseCipher } = encryptors;
+import { caesarCipher, symbolCipher, reverseCipher } from "./encryptors.js";
 
 // User Input / Output Logic
-/////////////////////////////////////////////
 
 const encryptionMethod = getEncryptionMethod();
 process.stdin.on("data", (userInput) => {

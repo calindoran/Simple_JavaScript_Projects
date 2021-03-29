@@ -32,7 +32,7 @@ Here is your encrypted message:
 > olleh dlrow
 ```
 
-For example, try running this command in the terminal:
+For example, try running this command in the terminal using Bash:
 
 ```
 node message-mixer.js caesar 4
@@ -48,4 +48,24 @@ Should return:
 
 ```
 > great job!
+```
+
+For example, using message-mixer.js, we can encode the message 'hello world' using a Caesar cipher with an amount of 4 like so:
+```
+$ node message-mixer.js caesar 4
+Enter the message you would like to encrypt...
+> hello world
+ 
+Here is your encrypted message:
+> lipps asvph
+```
+
+To decode the message 'lipps asvph', we can run the program in reverse, like so:
+```
+$ node message-mixer.js caesar -4
+Enter the message you would like to encrypt...
+> lipps asvph
+ 
+Here is your encrypted message:
+> hello world
 ```
